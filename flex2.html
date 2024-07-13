@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(21, 170, 216);
+        }
+       .flex-container1{background-color: white;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            padding: 5px;
+            font-size: 30px;}
+        .flex-container2{   display: flex;
+            flex-direction: column-reverse;
+            background-color: rgb(149, 143, 233);}
+        .flex-container3{
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(190, 207, 89);
+        }
+       
+        .flex-container4{
+            display: flex;
+            flex-direction: row-reverse;            ;
+            background-color: rgb(148, 230, 155);
+        }
+      
+        .flex-wrap{
+            display:flex;
+            flex-wrap: wrap;
+            background-color: aqua;
+        }
+        .flex-wrap1 {
+           background-color: white;
+           width: 100px;
+           margin: 10px;
+           padding: 5px;
+           font-size: 30px;}
+           .flex-wrap2{
+            display:flex;
+            flex-wrap:nowrap;
+            background-color: rgb(226, 139, 172);}
+          
+           .flex-wrap3{
+            display:flex;
+            flex-wrap:wrap-reverse;
+            background-color: rgb(113, 131, 190);}
+          
+           .justify{
+            display: flex;
+            justify-content: center;
+            background-color: bisque;
+           }
+           .justify1{
+           background-color: white;
+           width: 100px;
+           margin: 10px;
+           padding: 5px;
+           font-size: 30px;}
+           .justify2{
+            display: flex;
+            justify-content: flex-start;
+            background-color: bisque;
+           }
+          
+           .justify3{
+            display: flex;
+            justify-content: flex-end;
+            background-color: rgb(219, 177, 161);
+           }
+           .alignitems{
+            display: flex;
+            height: 200px;
+            align-items: center;
+            background-color: orange;
+           }
+           .aligncode{background-color: white;
+           width: 100px;
+           margin: 10px;
+           padding: 5px;
+           font-size: 30px;
+        text-align: center;}
+           .alignitems2{ display: flex;
+            height: 200px;
+            align-items: stretch;
+            background-color: rgb(212, 153, 192);}
+            .alignitems3{ display: flex;
+            height: 200px;
+            align-items: baseline;
+            background-color: rgb(139, 123, 230);
+           }
+           .aligncontent{
+            display: flex;
+            height: 600px;
+            flex-wrap: wrap;
+            align-content: space-between;
+            background-color: rgb(212, 153, 192);}
+            .aligncont1{background-color: white;
+           width: 100px;
+           margin: 10px;
+           padding: 5px;
+           font-size: 30px;
+        text-align: center;}
+           
+
+    </style>
+</head>
+<body>
+    <h1>flex Direction</h1>
+    <div class="flex-container">
+        <div class="flex-container1">1</div>
+         <div  class="flex-container1">2</div>
+        <div  class="flex-container1">3</div>
+    </div><br>
+    <div class="flex-container2">
+        <div  class="flex-container1">1</div>
+        <div  class="flex-container1">2</div>
+        <div  class="flex-container1" >3</div>
+    </div><br>
+    <div class="flex-container3">
+        <div  class="flex-container1">1</div>
+        <div  class="flex-container1">2</div>
+        <div  class="flex-container1">3</div>
+    </div><br>
+    <div class="flex-container4">
+        <div class="flex-container1">1</div>
+        <div  class="flex-container1">2</div>
+        <div  class="flex-container1">3</div>
+    </div>
+    <h1>flex wrap</h1>
+    <div class="flex-wrap">   
+    <div class="flex-wrap1">1</div>
+  <div class="flex-wrap1">2</div>
+  <div class="flex-wrap1">3</div>  
+  <div class="flex-wrap1">4</div>
+  <div class="flex-wrap1">5</div>
+  <div class="flex-wrap1">6</div>  
+  <div class="flex-wrap1">7</div>
+  <div class="flex-wrap1">8</div>
+  <div class="flex-wrap1">9</div>  
+  <div class="flex-wrap1">10</div>
+  <div class="flex-wrap1">11</div>
+  <div class="flex-wrap1">12</div> 
+  </div><br>
+  <div class="flex-wrap2"> 
+    <div class="flex-wrap1">1</div>
+    <div class="flex-wrap1">2</div>
+    <div class="flex-wrap1">3</div>  
+    <div class="flex-wrap1">4</div>
+    <div class="flex-wrap1">5</div>
+    <div class="flex-wrap1">6</div>  
+    <div class="flex-wrap1">7</div>
+    <div class="flex-wrap1">8</div>
+    <div class="flex-wrap1">9</div>  
+    <div class="flex-wrap1">10</div>
+    <div class="flex-wrap1">11</div>
+    <div class="flex-wrap1">12</div> 
+    </div><br>  
+    <div class="flex-wrap3">
+        <div class="flex-wrap1">1</div>
+        <div class="flex-wrap1">2</div>
+        <div class="flex-wrap1">3</div>  
+        <div class="flex-wrap1">4</div>
+        <div class="flex-wrap1">5</div>
+        <div class="flex-wrap1">6</div>  
+        <div class="flex-wrap1" >7</div>
+        <div class="flex-wrap1">8</div>
+        <div class="flex-wrap1">9</div>  
+        <div class="flex-wrap1">10</div>
+        <div class="flex-wrap1">11</div>
+        <div class="flex-wrap1">12</div> 
+    </div>
+    <h1>justify-content</h1>
+    <div class="justify">
+        <div class="justify1">1</div>
+        <div  class="justify1">2</div>
+        <div  class="justify1">3</div>
+    </div><br>
+    <div class="justify2">
+        <div  class="justify1">1</div>
+        <div  class="justify1">2</div>
+        <div  class="justify1">3</div>
+    </div><br>
+    <div class="justify3">
+        <div  class="justify1">1</div>
+        <div  class="justify1">2</div>
+        <div  class="justify1">3</div>
+    </div>
+    <h1>align-items</h1>
+    <div class="alignitems">
+        <div class="aligncode">1</div>
+        <div class="aligncode">2</div>
+        <div class="aligncode">3</div>
+    </div><br>
+    <div class="alignitems2">
+        <div class="aligncode">1</div>
+        <div class="aligncode">2</div>
+        <div class="aligncode">3</div>
+    </div><br>
+    <div class="alignitems3">
+        <div class="aligncode"><h1>1</h1></div>
+        <div class="aligncode"><h3>2</h3></div>
+        <div class="aligncode"><h2>3</h2></div>
+    </div>
+    <div class="aligncontent">
+        <div class="aligncont1">1</div>
+        <div class="aligncont1">2</div>
+        <div class="aligncont1">3</div>  
+        <div class="aligncont1">4</div>
+        <div class="aligncont1">5</div>
+        <div class="aligncont1">6</div>  
+        <div class="aligncont1" >7</div>
+        <div class="aligncont1">8</div>
+        <div class="aligncont1">9</div>  
+        <div class="aligncont1">10</div>
+        <div class="aligncont1">11</div>
+        <div class="aligncont1">12</div>
+    </div>
+</body>
+</html>
